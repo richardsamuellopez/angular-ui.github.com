@@ -9,13 +9,29 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href="css/app.css" rel="stylesheet">
     </head>
+    <script src="/player-pool/js/tabletop.js"></script>
+    <script type="text/javascript">
+      window.onload = function() { init() };
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1o0qgdnj9YgMSNxm3vpRxRN39fa8xvE45S9PaqdXU-uk/pubhtml';
+
+      function init() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showInfo,
+                         simpleSheet: true } )
+      }
+
+      function showInfo(data, tabletop) {
+        alert("Successfully processed!")
+        console.log(data);
+      }
+    </script>
 
     <body ng-controller="DemoCtrl">
         <header class="navbar navbar-fixed-top navbar-default">
             <div class="navbar-inner">
                 <div class="container">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="http://angular-ui.github.io/">HAngularUIW</a>
+                        <a class="navbar-brand" href="http://angular-ui.github.io/">Player Pool</a>
                     </div>
 
                     <div class="container">
