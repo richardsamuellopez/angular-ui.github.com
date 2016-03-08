@@ -5,13 +5,13 @@ angular
 .config(function(TabletopProvider){
     TabletopProvider.setTabletopOptions({
       key: 'https://docs.google.com/spreadsheets/d/1o0qgdnj9YgMSNxm3vpRxRN39fa8xvE45S9PaqdXU-uk/pubhtml',
-      simpleSheet: true
+      
     });
   })
 .controller('PoolCtrl', function($scope, Tabletop){
     Tabletop.then(function(ttdata){
       var data = ttdata[0];
-      
+
       console.log(data);
 
           $scope.entries= data;
