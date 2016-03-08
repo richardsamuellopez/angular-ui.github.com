@@ -13,7 +13,7 @@ angular
       var data = ttdata[0];
 
       console.log("DATA",data);
-$scope.players = data.players;
+$scope.players = data.Players.elements;
           $scope.entries= data.Standings.elements;
           console.log("Players: ",$scope.players);
           console.log("Entires: ",$scope.entries);
