@@ -9,24 +9,6 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href="css/app.css" rel="stylesheet">
     </head>
-    <!-- <script src="/player-pool/js/tabletop.js"></script> -->
-
-
-    <script type="text/javascript">
-      // window.onload = function() { init() };
-      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1o0qgdnj9YgMSNxm3vpRxRN39fa8xvE45S9PaqdXU-uk/pubhtml';
-
-      // function init() {
-      //   Tabletop.init( { key: public_spreadsheet_url,
-      //                    callback: showInfo,
-      //                    simpleSheet: true } )
-      // }
-      //
-      // function showInfo(data, tabletop) {
-      //   alert("Successfully processed!")
-      //   console.log(data);
-      // }
-    </script>
 
     <body ng-controller="PoolCtrl">
         <header class="navbar navbar-fixed-top navbar-default">
@@ -62,20 +44,9 @@
 
         <div>
             <header class="jumbotron" id="overview">
-                <div class="container">
-                    <div class="col-sm-3 logo"></div>
-                    <div class="col-sm-7">
-                        <h1>AngularUI</h1>
-
-                        <p>The companion suite(s) to the <a href="http://angularjs.org">AngularJS</a> framework.</p>
-                    </div>
+                <div class="container">Entries:{{entires}}
                 </div>
 
-                <div class="bs-docs-social">
-                    <div class="container">
-
-                    </div>
-                </div>
             </header>
 
             <div class="container" >

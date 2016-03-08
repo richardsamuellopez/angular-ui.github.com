@@ -13,6 +13,7 @@ angular
       var data = ttdata[0];
       console.log("HW");
       console.log(data);
+      $scope.entries= data;
     })
 });
 //
