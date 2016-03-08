@@ -14,8 +14,10 @@ angular
       console.log("HW");
       console.log(data);
       $scope.myscope="SUP";
+        $scope.$apply(function () {
           $scope.entries= data;
-          $scope.$apply();
+        });
+          // $scope.$apply();
 
     })
 });
