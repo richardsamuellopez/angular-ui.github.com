@@ -14,12 +14,11 @@ angular
       console.log("HW");
       console.log(data);
       $scope.myscope="SUP";
-        $scope.$apply(function () {
           $scope.entries= data;
-        });
+          $scope.test="TEST";
           // $scope.$apply();
 
-    })
+    });
 });
 //
 // var app = angular.module('demo', []).controller('DemoCtrl', function($scope) {
