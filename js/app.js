@@ -14,7 +14,7 @@ angular
 
       console.log("DATA",data);
 $scope.players = data.players;
-          $scope.entries= data.standings.elements;
+          $scope.entries= data.Standings.elements;
           console.log("Players: ",$scope.players);
           console.log("Entires: ",$scope.entries);
 
