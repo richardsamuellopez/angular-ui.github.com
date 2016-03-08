@@ -51,15 +51,14 @@
 
             </header> -->
 
-            <uib-accordion close-others="oneAtATime">
 
-   <uib-accordion-group heading="TEAM: {{entry.Entry}}" ng-repeat="entry in entries">
-     {{entry.1}}
-   </uib-accordion-group>
 
             <div class="container" >
-                <section id="modules">
-                    <h1 class="page-header">Modules</h1>
+                <section id="rankings">
+                    <h1 class="page-header">Rankings</h1>
+                    <uib-accordion-group heading="TEAM: {{entry.Entry}}" ng-repeat="entry in entries">
+                      {{entry.wc1}}
+                    </uib-accordion-group>
 
 
                 </section>
