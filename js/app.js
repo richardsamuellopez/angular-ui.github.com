@@ -5,16 +5,18 @@ angular
 .config(function(TabletopProvider){
     TabletopProvider.setTabletopOptions({
       key: 'https://docs.google.com/spreadsheets/d/1o0qgdnj9YgMSNxm3vpRxRN39fa8xvE45S9PaqdXU-uk/pubhtml',
-      
+
     });
   })
 .controller('PoolCtrl', function($scope, Tabletop){
     Tabletop.then(function(ttdata){
       var data = ttdata[0];
 
-      console.log(data);
-
-          $scope.entries= data;
+      console.log("DATA",data);
+$scope.players = data.players;
+          $scope.entries= data.standings.elements;
+          console.log("Players: ",$scope.players);
+          console.log("Entires: ",$scope.entries);
 
     });
 });
