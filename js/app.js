@@ -13,9 +13,9 @@ angular
       var data = ttdata[0];
       console.log("HW");
       console.log(data);
-      $timeout(function() {
+      $scope.myscope="SUP";
           $scope.entries= data;
-        });
+
     })
 });
 //
