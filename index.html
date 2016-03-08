@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="top" lang="en" ng-app="demo">
+<html id="top" lang="en" ng-app="pool">
     <head>
         <title>AngularUI for AngularJS</title>
 
@@ -11,22 +11,22 @@
     </head>
     <script src="/player-pool/js/tabletop.js"></script>
     <script type="text/javascript">
-      window.onload = function() { init() };
+      // window.onload = function() { init() };
       var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1o0qgdnj9YgMSNxm3vpRxRN39fa8xvE45S9PaqdXU-uk/pubhtml';
 
-      function init() {
-        Tabletop.init( { key: public_spreadsheet_url,
-                         callback: showInfo,
-                         simpleSheet: true } )
-      }
-
-      function showInfo(data, tabletop) {
-        alert("Successfully processed!")
-        console.log(data);
-      }
+      // function init() {
+      //   Tabletop.init( { key: public_spreadsheet_url,
+      //                    callback: showInfo,
+      //                    simpleSheet: true } )
+      // }
+      //
+      // function showInfo(data, tabletop) {
+      //   alert("Successfully processed!")
+      //   console.log(data);
+      // }
     </script>
 
-    <body ng-controller="DemoCtrl">
+    <body ng-controller="PoolCtrl">
         <header class="navbar navbar-fixed-top navbar-default">
             <div class="navbar-inner">
                 <div class="container">
@@ -71,38 +71,7 @@
 
                 <div class="bs-docs-social">
                     <div class="container">
-                        <ul class="bs-docs-social-buttons">
-                            <li>
-                                <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="angularjs">Tweet</a>
-                                <script>!function(d, s, id) {
-                                                var js, fjs = d.getElementsByTagName(s)[0];
-                                                if (!d.getElementById(id)) {
-                                                    js = d.createElement(s);
-                                                    js.id = id;
-                                                    js.src = "//platform.twitter.com/widgets.js";
-                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                }
-                                            }(document, "script", "twitter-wjs");</script>
-                            </li>
-
-                            <li>
-                                <!-- Place this tag where you want the +1 button to render. -->
-
-                                <div class="g-plusone" data-size="medium"></div><!-- Place this tag after the last +1 button tag. -->
-                                <!-- Place this tag after the last +1 button tag. -->
-                                <script type="text/javascript">
-                                            (function() {
-                                                var po = document.createElement('script');
-                                                po.type = 'text/javascript';
-                                                po.async = true;
-                                                po.src = 'https://apis.google.com/js/plusone.js';
-                                                var s = document.getElementsByTagName('script')[0];
-                                                s.parentNode.insertBefore(po, s);
-                                            })();
-                                </script>
-
-                            </li>
-                        </ul>
+                      
                     </div>
                 </div>
             </header>
