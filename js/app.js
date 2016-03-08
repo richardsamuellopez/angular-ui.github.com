@@ -11,12 +11,10 @@ angular
 .controller('PoolCtrl', function($scope, Tabletop){
     Tabletop.then(function(ttdata){
       var data = ttdata[0];
-      console.log("HW");
+      
       console.log(data);
-      $scope.myscope="SUP";
+
           $scope.entries= data;
-          $scope.test="TEST";
-          // $scope.$apply();
 
     });
 });
