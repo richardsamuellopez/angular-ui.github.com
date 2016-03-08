@@ -43,13 +43,19 @@
         </header>
 
         <div>
-            <header class="jumbotron" id="overview">
+            <!-- <header class="jumbotron" id="overview">
                 <div class="container" ng-repeat="entry in entries">
                   <div><label>TEAM NAME: <label><span ng-bind="entry.Entry"></span></div>
                   <div>{{entry}}</div>
                 </div>
 
-            </header>
+            </header> -->
+
+            <uib-accordion close-others="oneAtATime">
+
+   <uib-accordion-group heading="TEAM: {{entry.Entry}}" ng-repeat="entry in entries">
+     {{entry.1}}
+   </uib-accordion-group>
 
             <div class="container" >
                 <section id="modules">
@@ -59,31 +65,7 @@
                 </section>
 
 
-                <section id="ide-plugins">
-                    <h1 class="page-header">IDE Plugins <small>AngularJS support in your favorite text editors</small></h1>
 
-                    <div class="clearfix">
-                        <ul class="nav nav-tabs nav-stacked col-md-6">
-                            <li>
-                                <a href="http://github.com/angular-ui/AngularJS.tmbundle">AngularJS.tmbundle <span class="text-muted">TextMate</span></a>
-                            </li>
-
-                            <li>
-                                <a href="http://github.com/angular-ui/AngularJS-Atom">AngularJS-Atom <span class="text-muted">Atom</span></a>
-                            </li>
-                        </ul>
-
-                        <ul class="nav nav-tabs nav-stacked col-md-6">
-                            <li>
-                                <a href="http://github.com/angular-ui/AngularJS-sublime-package">AngularJS.sublime-package <span class="text-muted">SublimeText</span></a>
-                            </li>
-
-                            <li>
-                                <a href="http://github.com/angular-ui/AngularJS-brackets">AngularJS-brackets <span class="text-muted">Brackets</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
             </div>
         </div>
 
