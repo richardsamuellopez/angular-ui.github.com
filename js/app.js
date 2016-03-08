@@ -15,6 +15,7 @@ angular
       console.log(data);
       $scope.myscope="SUP";
           $scope.entries= data;
+          $scope.apply();
 
     })
 });
