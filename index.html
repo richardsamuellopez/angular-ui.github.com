@@ -44,8 +44,9 @@
 
         <div>
             <header class="jumbotron" id="overview">
-                <div class="container">Entries:{{entries}}
-                  
+                <div class="container" ng-repeat="entry in entries">
+                  <div>TEAM NAME: {{entry.entry}}</div>
+                  <div>{{entry}}</div>
                 </div>
 
             </header>
