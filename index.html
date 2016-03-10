@@ -3,7 +3,7 @@
     <head>
         <title>AngularUI for AngularJS</title>
 
-        <link href="logo/UI_Shield.png" rel="shortcut icon">
+        <!-- <link href="logo/UI_Shield.png" rel="shortcut icon"> -->
 
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -15,29 +15,9 @@
             <div class="navbar-inner">
                 <div class="container">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="http://angular-ui.github.io/">Player Pool</a>
+                        <a class="navbar-brand" href="http://richardsamuellopez.github.io/angular-ui.github.com//">Player Pool</a>
                     </div>
 
-                    <div class="container">
-                        <div class="container">
-                            <div class="dropdown"></div>
-
-                            <div class="navbar-collapse">
-                                <ul class="nav navbar-nav">
-                                    <li>
-                                        <a href="#modules">Modules</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#ide-plugins">IDE Plugins</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://github.com/angular-ui"><i class="fa fa-lg fa-github"></i> GitHub</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </header>
@@ -51,16 +31,17 @@
 
             </header> -->
 
-
-
             <div class="container" >
                 <section id="rankings" ng-cloak>
                     <h1 class="page-header">Rankings</h1>
                     <uib-accordion>
-                      <uib-accordion-group heading="TEAM: {{entry.Entry}}" ng-repeat="entry in entries">
+                      <uib-accordion-group  ng-repeat="entry in entries">
+                        <uib-accordion-heading>
+       TEAM: {{entry.Entry}} Total Points 99<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+     </uib-accordion-heading>
+                        <div><label>#1 - </label><span>{{entry.[1]}} <span><span> pts</span></div>
                         <div>{{entry.WC1}}</div>
-                        <div>{{entry.WC2}}</div>
-                        <div>{{entry[1]}}</div>
+                        <div>{{entryWC2}}</div>
                         <div>{{entry}}</div>
                       </uib-accordion-group>
                     </uib-accordion>
