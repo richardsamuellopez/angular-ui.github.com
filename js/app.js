@@ -18,6 +18,12 @@ $scope.players = data.Players.elements;
           $scope.entries= data.Standings.elements;
           console.log("Players: ",$scope.players);
           console.log("Entires: ",$scope.entries);
+          $scope.seeds = 9;
+              $scope.myOtherNumber = 10;
+              $scope.getSeed = function(num) {
+                  return new Array(num);
+              }
+
 
     });
 });
