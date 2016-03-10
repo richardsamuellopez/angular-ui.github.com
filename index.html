@@ -54,11 +54,12 @@
 
 
             <div class="container" >
-                <section id="rankings">
+                <section id="rankings" ng-cloak>
                     <h1 class="page-header">Rankings</h1>
                     <uib-accordion>
                       <uib-accordion-group heading="TEAM: {{entry.Entry}}" ng-repeat="entry in entries">
                         {{entry.wc1}}
+                        {{entry}}
                       </uib-accordion-group>
                     </uib-accordion>
 
