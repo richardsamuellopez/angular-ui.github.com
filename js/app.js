@@ -56,6 +56,7 @@ console.log("PLAYERS: ",players);
             }
             points+=$scope.playerPoints(team.WC1);
             points+=$scope.playerPoints(team.WC2);
+            team.totalTeamPoints=points;
             return points;
           };
 
