@@ -26,7 +26,7 @@ $scope.players = data.Players.elements;
 
           $scope.getPlayer = function(name){
 
-            return = _.find($scope.players,'Player',name);
+            return _.find($scope.players,'Player',name);
           };
           // 32: "4"
           // 64: "22"
