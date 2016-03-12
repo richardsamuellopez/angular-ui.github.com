@@ -51,8 +51,10 @@ console.log("PLAYERS: ",players);
 
           $scope.teamPoints = function(team){
             var points = 0;
+            console.log("TEAM: ",team);
             for(i=1;i++;i<10){
-              points+=$scope.playerPoints(team[i]);
+              
+              points+=$scope.playerPoints(team[i.toString()]);
             }
             points+=$scope.playerPoints(WC1);
             points+=$scope.playerPoints(WC2);
