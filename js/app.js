@@ -15,6 +15,7 @@ angular
 
       console.log("DATA",data);
 $scope.players = data.Players.elements;
+var players = data.Players.elements;
           $scope.entries= data.Standings.elements;
           console.log("Players: ",$scope.players);
           console.log("Entires: ",$scope.entries);
@@ -25,9 +26,9 @@ $scope.players = data.Players.elements;
           }
 
           $scope.getPlayer = function(name){
-            var index =_.findIndex($scope.players,['Player',name]);
+            var index =_.findIndex(players,['Player',name]);
             console.log("INDEX: ",name,index);
-            return $scope.players[index];
+            return _.find(players,['Payer', name]);
           };
           // 32: "4"
           // 64: "22"
