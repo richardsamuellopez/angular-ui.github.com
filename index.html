@@ -42,7 +42,7 @@
                         </uib-accordion-heading>
 
                         <div ng-repeat="i in getSeed(seeds) track by $index">
-                          <label>#{{$index+1}} - </label><span>{{entry[$index+1]}} <span><span>{{playerPoints(entry.[$index+1])}}  pts</span></div>
+                          <label>#{{$index+1}} - </label><span>{{entry[$index+1]}} <span><span>{{playerPoints(entry[$index+1])}}  pts</span></div>
                         <div><label>#WC - </label><span>{{entry.WC1}}</span><span>{{playerPoints(entry.WC1)}} pts</span></div>
                         <div><label>#WC - </label><span>{{entry.WC2}}</span><span>{{playerPoints(entry.WC1)}}  pts</span></div>
                         <div>{{entry}}</div>
