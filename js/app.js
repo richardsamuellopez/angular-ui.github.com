@@ -44,7 +44,7 @@ $scope.players = data.Players.elements;
             console.log("NAME: ",name);
             var player = $scope.getPlayer(name)
             // console.log("Player: ",player);
-            var ttlPts = ParseInt(player["64"])+ParseInt(player["32"])+ParseInt(player["Sweet 16"]);
+            var ttlPts = parseInt(player["64"])+parseInt(player["32"])+parseInt(player["Sweet 16"]);
             return ttlPts;
           };
 
