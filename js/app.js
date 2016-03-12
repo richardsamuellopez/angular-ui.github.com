@@ -19,14 +19,32 @@ $scope.players = data.Players.elements;
           console.log("Players: ",$scope.players);
           console.log("Entires: ",$scope.entries);
           $scope.seeds = 9;
-              $scope.myOtherNumber = 10;
-              $scope.getSeed = function(num) {
-                  return new Array(num);
-              }
+          $scope.myOtherNumber = 10;
+          $scope.getSeed = function(num) {
+              return new Array(num);
+          }
 
-$scope.playerPoints = function(name){
-  return 30;
-};
+          $scope.getPlayer = function(name){
+
+            return = _.find($scope.players,'Player',name);
+          };
+          // 32: "4"
+          // 64: "22"
+          // Championship: "0"
+          // Elite 8: "6"
+          // Final 4: "0"
+          // Player: "Stanley Johnson"
+          // Roster Count: "#REF!"
+          // Still Alive?: "No"
+          // Sweet 16: "12"
+          // Team: "Arizona"
+          // Total: "44"
+
+          $scope.playerPoints = function(name){
+            var player = $scope.getPlayer(name)
+            var ttlPts = player[64]+player[32]+player[Sweet 16];
+            return ttlPts;
+          };
 
     });
 });
