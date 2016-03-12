@@ -28,7 +28,6 @@ console.log("PLAYERS: ",players);
 
           $scope.getPlayer = function(name){
             var index =_.findIndex(players,{'Player':name});
-            console.log("INDEX: ",name,index);
             return _.find(players,{'Player': name});
           };
           // 32: "4"
@@ -44,12 +43,8 @@ console.log("PLAYERS: ",players);
           // Total: "44"
 
           $scope.playerPoints = function(name){
-            console.log("NAME: ",name);
             var player = $scope.getPlayer(name)
-            console.log("POINTS: ",player["64"]);
-            // console.log("Player: ",player);
             var ttlPts = parseInt(player["64"])+parseInt(player["32"])+parseInt(player["Sweet 16"]);
-            console.log("TTL POINTS: ",ttlPts);
             return ttlPts;
           };
 
