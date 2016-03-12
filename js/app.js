@@ -27,9 +27,9 @@ console.log("PLAYERS: ",players);
           }
 
           $scope.getPlayer = function(name){
-            var index =_.findIndex(players,['Player',name]);
+            var index =_.findIndex(players,{'Player',name});
             console.log("INDEX: ",name,index);
-            return _.find(players,['Player', name]);
+            return _.find(players,{'Player', name});
           };
           // 32: "4"
           // 64: "22"
