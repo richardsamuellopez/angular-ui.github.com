@@ -24,6 +24,9 @@ $scope.players = data.Players.elements;
                   return new Array(num);
               }
 
+$scope.playerPoints = function(name){
+  return 30;
+};
 
     });
 });
