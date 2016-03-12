@@ -42,7 +42,7 @@ $scope.players = data.Players.elements;
 
           $scope.playerPoints = function(name){
             var player = $scope.getPlayer(name)
-            var ttlPts = player[64]+player[32]+player[Sweet 16];
+            var ttlPts = player["64"]+player["32"]+player["Sweet 16"];
             return ttlPts;
           };
 
