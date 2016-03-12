@@ -35,7 +35,7 @@
                 <section id="rankings" ng-cloak>
                     <h1 class="page-header">Rankings</h1>
                     <uib-accordion>
-                      <uib-accordion-group  ng-repeat="entry in entries">
+                      <uib-accordion-group  ng-repeat="entry in entries | orderBy: teamPoints(entry)">
                         <uib-accordion-heading>
                           TEAM: {{entry.Entry}} Total Points {{teamPoints(entry)}}
                           <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
