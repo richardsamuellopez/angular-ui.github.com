@@ -53,7 +53,7 @@ console.log("PLAYERS: ",players);
             var points = 0;
             // for(i=1;i++;i<10){
             //
-            //   points+=$scope.playerPoints(team[i.toString()]);
+            //   points+=$scope.playerPoints(team[i]);
             // }
             points+=$scope.playerPoints(team[1]);
             points+=$scope.playerPoints(team[2]);
@@ -64,8 +64,8 @@ console.log("PLAYERS: ",players);
             points+=$scope.playerPoints(team[7]);
             points+=$scope.playerPoints(team[8]);
             points+=$scope.playerPoints(team[9]);
-            // points+=$scope.playerPoints(team[WC1]);
-            // points+=$scope.playerPoints(team[WC2]);
+            points+=$scope.playerPoints(team.WC1);
+            points+=$scope.playerPoints(team.WC2);
             return points;
           };
 
