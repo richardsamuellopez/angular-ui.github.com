@@ -41,9 +41,10 @@ $scope.players = data.Players.elements;
           // Total: "44"
 
           $scope.playerPoints = function(name){
+            console.log("NAME: ",name);
             var player = $scope.getPlayer(name)
-            console.log("Player: ",player);
-            var ttlPts = player["64"]+player["32"]+player["Sweet 16"];
+            // console.log("Player: ",player);
+            var ttlPts = ParseInt(player["64"])+ParseInt(player["32"])+ParseInt(player["Sweet 16"]);
             return ttlPts;
           };
 
