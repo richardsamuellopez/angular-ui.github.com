@@ -64,8 +64,8 @@ console.log("PLAYERS: ",players);
             points+=$scope.playerPoints(team[7]);
             points+=$scope.playerPoints(team[8]);
             points+=$scope.playerPoints(team[9]);
-            points+=$scope.playerPoints(team[WC1]);
-            points+=$scope.playerPoints(team[WC2]);
+            // points+=$scope.playerPoints(team[WC1]);
+            // points+=$scope.playerPoints(team[WC2]);
             return points;
           };
 
