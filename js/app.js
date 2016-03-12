@@ -26,6 +26,7 @@ $scope.players = data.Players.elements;
 
           $scope.getPlayer = function(name){
             var index =_.findIndex($scope.players,'Player',name);
+            console.log("INDEX: ",index);
             return $scope.players[index];
           };
           // 32: "4"
