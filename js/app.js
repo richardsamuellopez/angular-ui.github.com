@@ -43,8 +43,10 @@ $scope.players = data.Players.elements;
           $scope.playerPoints = function(name){
             console.log("NAME: ",name);
             var player = $scope.getPlayer(name)
+            console.log("POINTS: ",player["64"]);
             // console.log("Player: ",player);
             var ttlPts = parseInt(player["64"])+parseInt(player["32"])+parseInt(player["Sweet 16"]);
+            console.log("TTL POINTS: ",ttlPts);
             return ttlPts;
           };
 
