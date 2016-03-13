@@ -62,7 +62,7 @@ console.log("PLAYERS: ",players);
             return points;
           };
 
-          $scope.playerTeam = function(){
+          $scope.playerTeam = function(name){
             var player = $scope.getPlayer(name);
             console.log("playerTeam: ", name, player);
             return player.Team;
