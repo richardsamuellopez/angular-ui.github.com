@@ -60,5 +60,9 @@ console.log("PLAYERS: ",players);
             return points;
           };
 
+          $scope.playerTeam = function(){
+            console.log("THIS",this);
+            return "TEAM NAME";
+          };
     });
 });

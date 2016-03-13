@@ -30,7 +30,7 @@
                 </div>
 
             </header> -->
-            <div class="col-cs-12" >
+            <div class="col-xs-12" >
                 <section id="rankings" ng-cloak>
                     <h1 class="page-header">Rankings</h1>
                     <uib-accordion>
@@ -41,7 +41,16 @@
                         </uib-accordion-heading>
 
                         <div ng-repeat="i in getSeed(seeds) track by $index">
-                          <label>#{{$index+1}} - </label><span> {{entry[$index+1]}} <span><span>{{playerPoints(entry[$index+1])}}</span><span> pts</span>
+                          <label class="col-xs-1">#{{$index+1}} - </label>
+                          <div class="col-xs-3"> {{entry[$index+1]}} </div>
+                          <div class="col-xs-2"> {{playerTeam()}}</div>
+                          <div class="col-xs-1"> 64</div>
+                          <div class="col-xs-1"> 32</div>
+                          <div class="col-xs-1"> 16</div>
+                          <div class="col-xs-1"> 8</div>
+                          <div class="col-xs-1"> 4</div>
+                          <div class="col-xs-1"> 2</div>
+                          <div class="col-xs-1">{{playerPoints(entry[$index+1])}} pts</div>
                         </div>
                         <div><label>#WC - </label><span> {{entry.WC1}} </span><span>{{playerPoints(entry.WC1)}}<span></span> pts</span></div>
                         <div><label>#WC - </label><span> {{entry.WC2}} </span><span>{{playerPoints(entry.WC2)}}<span></span>  pts</span></div>
