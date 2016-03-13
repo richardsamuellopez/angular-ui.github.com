@@ -40,7 +40,7 @@
                           <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
                         </uib-accordion-heading>
 
-                        <div ng-repeat="i in getSeed(seeds) track by $index">
+                        <div ng-repeat="i in getSeed(seeds) track by $index" class="col-xs-12">
                           <label class="col-xs-1">#{{$index+1}} - </label>
                           <div class="col-xs-2"> {{entry[$index+1]}} </div>
                           <div class="col-xs-2"> {{playerTeam(entry[$index+1])}}</div>
