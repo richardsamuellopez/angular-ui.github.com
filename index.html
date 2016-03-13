@@ -42,14 +42,14 @@
 
                         <div ng-repeat="i in getSeed(seeds) track by $index">
                           <label class="col-xs-1">#{{$index+1}} - </label>
-                          <div class="col-xs-3"> {{entry[$index+1]}} </div>
-                          <div class="col-xs-2"> {{playerTeam()}}</div>
-                          <div class="col-xs-1"> 64</div>
-                          <div class="col-xs-1"> 32</div>
-                          <div class="col-xs-1"> 16</div>
-                          <div class="col-xs-1"> 8</div>
-                          <div class="col-xs-1"> 4</div>
-                          <div class="col-xs-1"> 2</div>
+                          <div class="col-xs-2"> {{entry[$index+1]}} </div>
+                          <div class="col-xs-2"> {{playerTeam(entry[$index+1])}}</div>
+                          <div class="col-xs-1"> {{playerPointsByRound("64")}}</div>
+                          <div class="col-xs-1"> {{playerPointsByRound("32")}}</div>
+                          <div class="col-xs-1"> {{playerPointsByRound("Sweet 16"}}</div>
+                          <div class="col-xs-1"> {{playerPointsByRound("Elite 8")}}</div>
+                          <div class="col-xs-1"> {{playerPointsByRound("Final 4")}}</div>
+                          <div class="col-xs-1"> {{playerPointsByRound("Championship")}}</div>
                           <div class="col-xs-1">{{playerPoints(entry[$index+1])}} pts</div>
                         </div>
                         <div><label>#WC - </label><span> {{entry.WC1}} </span><span>{{playerPoints(entry.WC1)}}<span></span> pts</span></div>

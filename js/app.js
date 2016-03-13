@@ -26,10 +26,6 @@ console.log("PLAYERS: ",players);
               return new Array(num);
           }
 
-          $scope.getPlayer = function(name){
-            var index =_.findIndex(players,{'Player':name});
-            return _.find(players,{'Player': name});
-          };
           // 32: "4"
           // 64: "22"
           // Championship: "0"
@@ -41,6 +37,12 @@ console.log("PLAYERS: ",players);
           // Sweet 16: "12"
           // Team: "Arizona"
           // Total: "44"
+
+
+          $scope.getPlayer = function(name){
+            var index =_.findIndex(players,{'Player':name});
+            return _.find(players,{'Player': name});
+          };
 
           $scope.playerPoints = function(name){
             var player = $scope.getPlayer(name)
@@ -61,8 +63,13 @@ console.log("PLAYERS: ",players);
           };
 
           $scope.playerTeam = function(){
-            console.log("THIS",this);
-            return "TEAM NAME";
+            var player = $scope.getPlayer(name);
+            return player.Team;
+          };
+
+          $scope.playerPointsByRound = function(name, round){
+            var player = $scope.getPlayer(name);
+            return player[round];
           };
     });
 });
