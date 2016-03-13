@@ -64,6 +64,7 @@ console.log("PLAYERS: ",players);
 
           $scope.playerTeam = function(){
             var player = $scope.getPlayer(name);
+            console.log("playerTeam: ", name, player);
             return player.Team;
           };
 

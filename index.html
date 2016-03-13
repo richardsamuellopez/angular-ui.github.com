@@ -41,8 +41,7 @@
                         </uib-accordion-heading>
 
                         <div ng-repeat="i in getSeed(seeds) track by $index" class="col-xs-12">
-                          <label class="col-xs-1">#{{$index+1}} - </label>
-                          <div class="col-xs-2"> {{entry[$index+1]}} </div>
+                          <div class="col-xs-3">#{{$index+1}} - {{entry[$index+1]}} </div>
                           <div class="col-xs-2"> {{playerTeam(entry[$index+1])}}</div>
                           <div class="col-xs-1"> {{playerPointsByRound(entry[$index+1],"64")}}</div>
                           <div class="col-xs-1"> {{playerPointsByRound(entry[$index+1],"32")}}</div>
