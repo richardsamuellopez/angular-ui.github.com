@@ -21,7 +21,7 @@ console.log("PLAYERS: ",players);
           console.log("Players: ",$scope.players);
           console.log("Entires: ",$scope.entries);
           $scope.seeds = 11;
-          $scope.seedArray = [1,2,3,4,5,6,7,8,9,WC1,WC2];
+          $scope.seedArray = [1,2,3,4,5,6,7,8,9,"WC1","WC2"];
           $scope.myOtherNumber = 10;
           $scope.getSeed = function(num) {
               return seedArray[num];
