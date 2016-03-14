@@ -41,15 +41,15 @@
                         </uib-accordion-heading>
 
                         <div ng-repeat="i in getSeed(seeds) track by $index" class="col-xs-12">
-                          <div class="col-xs-3">#{{$index}} - {{entry[$index]}} </div>
-                          <div class="col-xs-2"> {{playerTeam(entry[$index])}}</div>
-                          <div class="col-xs-1"> {{playerPointsByRound(entry[$index],"64")}}</div>
-                          <div class="col-xs-1"> {{playerPointsByRound(entry[$index],"32")}}</div>
-                          <div class="col-xs-1"> {{playerPointsByRound(entry[$index],"Sweet 16")}}</div>
-                          <div class="col-xs-1"> {{playerPointsByRound(entry[$index],"Elite 8")}}</div>
-                          <div class="col-xs-1"> {{playerPointsByRound(entry[$index],"Final 4")}}</div>
-                          <div class="col-xs-1"> {{playerPointsByRound(entry[$index],"Championship")}}</div>
-                          <div class="col-xs-1">{{playerPoints(entry[$index])}} pts</div>
+                          <div class="col-xs-3">#{{$index+1}} - {{entry[getSeed($index)]}} </div>
+                          <div class="col-xs-2"> {{playerTeam(entry[getSeed($index)])}}</div>
+                          <div class="col-xs-1"> {{playerPointsByRound(entry[getSeed($index)],"64")}}</div>
+                          <div class="col-xs-1"> {{playerPointsByRound(entry[getSeed($index)],"32")}}</div>
+                          <div class="col-xs-1"> {{playerPointsByRound(entry[getSeed($index)],"Sweet 16")}}</div>
+                          <div class="col-xs-1"> {{playerPointsByRound(entry[getSeed($index)],"Elite 8")}}</div>
+                          <div class="col-xs-1"> {{playerPointsByRound(entry[getSeed($index)],"Final 4")}}</div>
+                          <div class="col-xs-1"> {{playerPointsByRound(entry[getSeed($index)],"Championship")}}</div>
+                          <div class="col-xs-1">{{playerPoints(entry[getSeed($index)])}} pts</div>
                         </div>
                         <!-- <div><label>#WC - </label><span> {{entry.WC1}} </span><span>{{playerPoints(entry.WC1)}}<span></span> pts</span></div> -->
                         <!-- <div class="col-xs-12">
