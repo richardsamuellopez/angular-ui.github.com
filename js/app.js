@@ -5,8 +5,8 @@ angular
 ])
 .config(function(TabletopProvider){
     TabletopProvider.setTabletopOptions({
-      key: 'https://docs.google.com/spreadsheets/d/1o0qgdnj9YgMSNxm3vpRxRN39fa8xvE45S9PaqdXU-uk/pubhtml',
-
+      // key: 'https://docs.google.com/spreadsheets/d/1o0qgdnj9YgMSNxm3vpRxRN39fa8xvE45S9PaqdXU-uk/pubhtml',
+key:'https://docs.google.com/spreadsheets/d/1KICPKqpWs_hBtyEapP4q8ROez__9cOkeae-VyH792p0/edit#gid=0'
     });
   })
 .controller('PoolCtrl', function($scope, Tabletop){
