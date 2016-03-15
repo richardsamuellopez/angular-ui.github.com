@@ -36,7 +36,7 @@
                     <uib-accordion>
                       <uib-accordion-group  ng-repeat="entry in entries | orderBy: '-totalTeamPoints'">
                         <uib-accordion-heading>
-                          TEAM: {{entry.Entry}} Total Points {{teamPoints(entry)}}
+                          #{{$index}} TEAM: {{entry.Entry}} Total Points {{teamPoints(entry)}}
                           <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
                         </uib-accordion-heading>
                         <table class="table table-hover table-condensed table-responsive">
@@ -87,7 +87,7 @@
                           <td class="hidden-xs"> {{playerPointsByRound(entry[$index+1],"Elite 8")}}</td>
                           <td class="hidden-xs"> {{playerPointsByRound(entry[$index+1],"Final 4")}}</td>
                           <td class="hidden-xs"> {{playerPointsByRound(entry[$index+1],"Championship")}}</td>
-                          <td class="hidden-xs">{{playerPoints(entry[$index+1])}} pts</td>
+                          <td>{{playerPoints(entry[$index+1])}} pts</td>
                         </tr>
                         <!-- <div ng-repeat="i in getSeed(seeds) track by $index" class="col-xs-12">
                           <div class="col-xs-3">#{{$index+1}} - {{entry[$index+1]}} </div>
