@@ -36,7 +36,7 @@
                     <uib-accordion>
                       <uib-accordion-group  ng-repeat="entry in entries | orderBy: '-totalTeamPoints'">
                         <uib-accordion-heading>
-                          #{{$index}} TEAM: {{entry.Entry}} Total Points {{teamPoints(entry)}}
+                          #{{$index+1}} TEAM: {{entry.Entry}} Total Points {{teamPoints(entry)}} <span ng-if="!$first">{{teamPoints(entry)-teamPoints(entry[0])}} Trailing Leader</span>
                           <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
                         </uib-accordion-heading>
                         <table class="table table-hover table-condensed table-responsive">
